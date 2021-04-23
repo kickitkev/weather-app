@@ -9,6 +9,7 @@ const CardExampleCard = ({ weatherData }) => (
       <p>Temprature: {weatherData.main.temp}</p>
       <p>Sunrise: {weatherData.sys.sunrise}</p>
       <p>Sunset: {weatherData.sys.sunset}</p>
+      <p>Wind Speed: {weatherData.wind.speed}</p>
       <p>Description: {weatherData.weather[0].description}</p>
     </Card.Content>
   </Card>
