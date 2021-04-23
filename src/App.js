@@ -30,7 +30,11 @@ export default function App() {
   return (
     <div className="App">
       {typeof data.main != "undefined" ? (
-        <Weather weatherData={data} />
+        <>
+          <Weather weatherData={data} />
+          <p>{lat}</p>
+          <p>{long}</p>
+        </>
       ) : (
         <div></div>
       )}
